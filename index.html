@@ -3,60 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Craftsvilla dtk0825</title>
+    <title>HTML 4 - Craftsvilla</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header>
-      <h1>The Boundry Between uuuuhhh..</h1>
-      <div id="heading">
-        <a href="#"
-          ><img
-            src="./images_icon/game-icons--forest-entrance.png"
-            alt="forestlogo"
-            id="logo"
-        /></a>
-        <a href="#"
-          ><img
-            src="./images_icon/fluent-emoji-high-contrast--water-wave.png"
-            alt="waterlogo"
-            id="logo"
-        /></a>
+      <h1>Observe ... pictures</h1>
+      <div>
+        <div id="logo-box">
+          <a href="#"
+            ><img
+              src="./images_icon/game-icons--forest-entrance.png"
+              alt="forestlogo"
+              id="logo"
+          /></a>
+          <a href="#"
+            ><img
+              src="./images_icon/fluent-emoji-high-contrast--water-wave.png"
+              alt="waterlogo"
+              id="logo"
+          /></a>
+        </div>
       </div>
-      <p>Here lies a few pictures showing the forest and waterdroplets.</p>
     </header>
-    <section>
-      <div id="forest_btn1" class="btn">
-        <img
-          src="./images_x/forestlake.jpg"
-          alt="Forest lake in beautiful view."
-        />
-      </div>
-      <div id="forest_btn2" class="btn">
-        <img
-          src="./images_x/forestmoss.jpg"
-          alt="A forest bed covered in wonderful moss."
-        />
-      </div>
-      <div id="forest_btn3" class="btn">
-        <img
-          src="./images_x/foresttrail-evening.jpg"
-          alt="Foresttrail in delightful evening light."
-        />
-      </div>
-      <div id="forest_btn4" class="btn">
-        <img
-          src="./images_x/foresttrail-morning.jpg"
-          alt="Foresttrail under the morning light."
-        />
-      </div>
+    <main>
+      <nav class="main-box">
+        <div class="btn">
+          <img
+            src="./images_x/forestlake.jpg"
+            alt="Forest lake in beautiful view."
+            style="width: 100%"
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="btn">
+          <img
+            src="./images_x/forestmoss.jpg"
+            alt="A forest bed covered in wonderful moss."
+            style="width: 100%"
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="btn">
+          <img
+            src="./images_x/foresttrail-evening.jpg"
+            alt="Foresttrail in delightful evening light."
+            style="width: 100%"
+            onclick="myFunction(this);"
+          />
+        </div>
+        <div class="btn">
+          <img
+            src="./images_x/foresttrail-morning.jpg"
+            alt="Foresttrail under the morning light."
+            style="width: 100%"
+            onclick="myFunction(this);"
+          />
+        </div>
+      </nav>
+    </main>
+
+    <!-- The expanding image container -->
+    <section class="picture-container">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closeBtn"
+        >&times;</span
+      >
+
+      <!-- Big picture -->
+      <img id="bigImg" style="width: 100%" />
+
+      <!-- Image text -->
+      <img id="imgText" />
     </section>
-    <section>
-      <div id="ocean_btn1" class="btn"><img src="" alt="" /></div>
-      <div id="ocean_btn2" class="btn"><img src="" alt="" /></div>
-      <div id="ocean_btn3" class="btn"><img src="" alt="" /></div>
-      <div id="ocean_btn4" class="btn"><img src="" alt="" /></div>
-    </section>
-    <section></section>
   </body>
 </html>
